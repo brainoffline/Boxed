@@ -1,0 +1,2 @@
+MainPackage=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\bin\x86\Release\Boxed.Win_2.0.0.1_Bundle\Boxed.Win_2.0.0.1_x86.appx
+SymbolPackage=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\AppPackages\Boxed.Win_2.0.0.1_Test\Boxed.Win_2.0.0.1_x86.appxsym

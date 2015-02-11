@@ -1,0 +1,11 @@
+﻿{
+    "Name": "Big Pack",
+
+    "GameSetFilenames": [
+        "SetB1.json",
+        "SetB2.json",
+        "SetB3.json",
+        "SetB4.json",
+        "SetB5.json",
+    ]
+}

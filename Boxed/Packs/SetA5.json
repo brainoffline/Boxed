@@ -1,0 +1,2729 @@
+﻿{
+  "Name": "5x10 Magnificent",
+  "Color": "#FFD80073",
+  "Games": [
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 4,
+          "Width": 4,
+          "Height": 3,
+          "CellCount": 12,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 3,
+          "Height": 2,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 7,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        }
+      ],
+      "Solution": "[[[[4],[6]],[[1],[4]]],[[[0],[6]],[[0],[4]]],[[[2],[8]],[[0],[7]]],[[[2],[9]],[[0],[9]]],[[[4],[9]],[[3],[8]]],[[[4],[7]],[[3],[7]]],[[[2],[3]],[[1],[0]]],[[[0],[3]],[[0],[0]]],[[[4],[3]],[[4],[0]]],[[[3],[3]],[[3],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 2,
+          "Height": 5,
+          "CellCount": 10,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 2,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 1,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[5]],[[2],[1]]],[[[1],[5]],[[1],[2]]],[[[0],[5]],[[0],[2]]],[[[1],[1]],[[0],[1]]],[[[3],[9]],[[2],[8]]],[[[1],[7]],[[0],[6]]],[[[1],[9]],[[0],[8]]],[[[4],[9]],[[4],[6]]],[[[3],[7]],[[2],[6]]],[[[4],[5]],[[4],[1]]],[[[2],[0]],[[0],[0]]],[[[4],[0]],[[3],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 4,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 4,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        }
+      ],
+      "Solution": "[[[[2],[7]],[[1],[4]]],[[[0],[1]],[[0],[0]]],[[[0],[3]],[[0],[2]]],[[[0],[5]],[[0],[4]]],[[[0],[9]],[[0],[6]]],[[[2],[9]],[[1],[8]]],[[[3],[5]],[[3],[2]]],[[[4],[9]],[[3],[6]]],[[[4],[5]],[[4],[2]]],[[[4],[1]],[[3],[0]]],[[[1],[3]],[[1],[0]]],[[[2],[3]],[[2],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 1,
+          "Y": 8,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 7,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 5,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 7,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 2,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[6]],[[1],[3]]],[[[0],[4]],[[0],[0]]],[[[0],[6]],[[0],[5]]],[[[0],[9]],[[0],[7]]],[[[2],[8]],[[1],[8]]],[[[2],[9]],[[1],[9]]],[[[2],[7]],[[1],[7]]],[[[4],[6]],[[3],[5]]],[[[4],[8]],[[3],[7]]],[[[4],[9]],[[3],[9]]],[[[4],[4]],[[4],[1]]],[[[3],[4]],[[3],[1]]],[[[4],[0]],[[3],[0]]],[[[2],[1]],[[2],[0]]],[[[1],[1]],[[1],[0]]],[[[2],[2]],[[1],[2]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 2,
+          "Height": 3,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 5,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 3,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 5,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 1,
+          "Y": 5,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 2,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 4,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 1,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 5,
+          "Height": 1,
+          "CellCount": 5,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[4]],[[1],[1]]],[[[0],[4]],[[0],[1]]],[[[2],[8]],[[1],[6]]],[[[0],[7]],[[0],[5]]],[[[0],[9]],[[0],[8]]],[[[2],[9]],[[1],[9]]],[[[3],[8]],[[3],[5]]],[[[4],[9]],[[3],[9]]],[[[4],[8]],[[4],[5]]],[[[2],[5]],[[1],[5]]],[[[4],[3]],[[3],[2]]],[[[4],[4]],[[3],[4]]],[[[4],[1]],[[3],[1]]],[[[4],[0]],[[0],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 5,
+          "Height": 2,
+          "CellCount": 10,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 2,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        }
+      ],
+      "Solution": "[[[[4],[5]],[[0],[4]]],[[[3],[8]],[[0],[7]]],[[[3],[9]],[[0],[9]]],[[[4],[9]],[[4],[6]]],[[[3],[6]],[[0],[6]]],[[[3],[3]],[[2],[2]]],[[[1],[3]],[[0],[0]]],[[[4],[3]],[[4],[0]]],[[[3],[1]],[[2],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 1,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 3,
+          "Height": 2,
+          "CellCount": 6,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 4,
+          "Y": 4,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[7]],[[2],[0]]],[[[1],[5]],[[1],[2]]],[[[0],[5]],[[0],[2]]],[[[1],[7]],[[0],[6]]],[[[1],[1]],[[0],[0]]],[[[2],[9]],[[0],[8]]],[[[4],[9]],[[3],[8]]],[[[3],[7]],[[3],[0]]],[[[4],[3]],[[4],[0]]],[[[4],[7]],[[4],[4]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 2,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 2,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 2,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        }
+      ],
+      "Solution": "[[[[2],[9]],[[2],[2]]],[[[1],[5]],[[0],[5]]],[[[1],[8]],[[0],[7]]],[[[1],[9]],[[0],[9]]],[[[1],[6]],[[0],[6]]],[[[0],[3]],[[0],[2]]],[[[1],[4]],[[0],[4]]],[[[1],[3]],[[1],[2]]],[[[4],[7]],[[3],[6]]],[[[4],[9]],[[3],[8]]],[[[4],[5]],[[4],[2]]],[[[3],[5]],[[3],[2]]],[[[3],[1]],[[2],[0]]],[[[1],[1]],[[0],[0]]],[[[4],[1]],[[4],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 4,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 5
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[4],[5]],[[1],[4]]],[[[0],[7]],[[0],[0]]],[[[0],[9]],[[0],[8]]],[[[2],[9]],[[2],[6]]],[[[1],[9]],[[1],[6]]],[[[3],[9]],[[3],[6]]],[[[4],[9]],[[4],[6]]],[[[2],[3]],[[2],[0]]],[[[1],[3]],[[1],[0]]],[[[4],[3]],[[4],[0]]],[[[3],[3]],[[3],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 3,
+          "Height": 5,
+          "CellCount": 15,
+          "CountX": 2,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 3,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 3,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 5,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 3,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        }
+      ],
+      "Solution": "[[[[3],[7]],[[1],[3]]],[[[0],[7]],[[0],[3]]],[[[3],[9]],[[2],[8]]],[[[1],[9]],[[0],[8]]],[[[4],[9]],[[4],[8]]],[[[4],[4]],[[4],[3]]],[[[4],[7]],[[4],[5]]],[[[3],[2]],[[2],[0]]],[[[1],[2]],[[0],[1]]],[[[1],[0]],[[0],[0]]],[[[4],[2]],[[4],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 3,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 7
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 7,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 5,
+          "Width": 3,
+          "Height": 2,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 5,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 2,
+          "Height": 3,
+          "CellCount": 6,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[4],[4]],[[1],[3]]],[[[0],[7]],[[0],[0]]],[[[0],[9]],[[0],[8]]],[[[4],[8]],[[1],[7]]],[[[4],[9]],[[1],[9]]],[[[4],[6]],[[2],[5]]],[[[1],[6]],[[1],[5]]],[[[4],[2]],[[3],[0]]],[[[2],[2]],[[1],[1]]],[[[2],[0]],[[1],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 3,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 3,
+          "Width": 1,
+          "Height": 6,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 4
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 7,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 7,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 4,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[6]],[[2],[3]]],[[[0],[8]],[[0],[3]]],[[[1],[9]],[[0],[9]]],[[[1],[6]],[[1],[3]]],[[[1],[8]],[[1],[7]]],[[[1],[1]],[[0],[0]]],[[[1],[2]],[[0],[2]]],[[[3],[9]],[[2],[8]]],[[[3],[7]],[[2],[7]]],[[[4],[3]],[[4],[0]]],[[[4],[5]],[[4],[4]]],[[[4],[9]],[[4],[6]]],[[[3],[2]],[[2],[1]]],[[[3],[0]],[[2],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 5,
+          "Height": 1,
+          "CellCount": 5,
+          "CountX": 4,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 7,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 5,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 5,
+          "Height": 1,
+          "CellCount": 5,
+          "CountX": 4,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[8]],[[2],[1]]],[[[1],[6]],[[0],[5]]],[[[1],[8]],[[0],[7]]],[[[0],[4]],[[0],[1]]],[[[1],[4]],[[1],[1]]],[[[4],[9]],[[0],[9]]],[[[4],[4]],[[4],[1]]],[[[3],[4]],[[3],[1]]],[[[4],[8]],[[3],[7]]],[[[4],[6]],[[3],[5]]],[[[4],[0]],[[0],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 5
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 9,
+          "Width": 5,
+          "Height": 1,
+          "CellCount": 5,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 3,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 8,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 5,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 1,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 5,
+          "Height": 1,
+          "CellCount": 5,
+          "CountX": 4,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[8]],[[2],[1]]],[[[1],[5]],[[0],[5]]],[[[1],[8]],[[0],[7]]],[[[1],[6]],[[0],[6]]],[[[0],[4]],[[0],[1]]],[[[1],[4]],[[1],[1]]],[[[4],[9]],[[0],[9]]],[[[4],[4]],[[3],[3]]],[[[4],[7]],[[3],[6]]],[[[4],[8]],[[3],[8]]],[[[4],[5]],[[3],[5]]],[[[4],[2]],[[3],[1]]],[[[4],[0]],[[0],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 3,
+          "Height": 5,
+          "CellCount": 15,
+          "CountX": 1,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 4
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 4,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 4,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[5]],[[1],[1]]],[[[0],[7]],[[0],[0]]],[[[0],[9]],[[0],[8]]],[[[2],[9]],[[2],[6]]],[[[1],[9]],[[1],[6]]],[[[3],[9]],[[3],[6]]],[[[4],[3]],[[4],[0]]],[[[4],[7]],[[4],[4]]],[[[4],[9]],[[4],[8]]],[[[3],[0]],[[1],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 2,
+          "Height": 6,
+          "CellCount": 12,
+          "CountX": 1,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 7,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 5,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 7,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[6]],[[2],[1]]],[[[1],[5]],[[0],[4]]],[[[0],[9]],[[0],[6]]],[[[1],[9]],[[1],[6]]],[[[0],[3]],[[0],[0]]],[[[1],[3]],[[1],[0]]],[[[3],[9]],[[2],[8]]],[[[3],[7]],[[2],[7]]],[[[4],[4]],[[4],[0]]],[[[4],[6]],[[4],[5]]],[[[4],[9]],[[4],[7]]],[[[3],[0]],[[2],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 7
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 6
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 2,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 4,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[7]],[[2],[0]]],[[[1],[7]],[[1],[0]]],[[[0],[3]],[[0],[0]]],[[[0],[7]],[[0],[4]]],[[[3],[9]],[[2],[8]]],[[[1],[9]],[[0],[8]]],[[[4],[9]],[[4],[8]]],[[[4],[3]],[[3],[2]]],[[[4],[7]],[[3],[4]]],[[[4],[1]],[[3],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 2,
+          "Y": 2,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 3,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 3,
+          "Width": 1,
+          "Height": 6,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 3,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 7,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 3,
+          "Y": 9,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 3,
+          "Y": 2,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[2],[9]],[[2],[2]]],[[[1],[7]],[[0],[6]]],[[[1],[9]],[[0],[8]]],[[[1],[4]],[[0],[3]]],[[[1],[5]],[[0],[5]]],[[[1],[2]],[[0],[2]]],[[[4],[8]],[[4],[3]]],[[[3],[6]],[[3],[3]]],[[[3],[8]],[[3],[7]]],[[[4],[9]],[[3],[9]]],[[[4],[2]],[[3],[2]]],[[[3],[1]],[[0],[0]]],[[[4],[1]],[[4],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 5,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 2,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 1,
+          "Y": 7,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 2,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 4,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 1
+        }
+      ],
+      "Solution": "[[[[4],[6]],[[1],[5]]],[[[0],[3]],[[0],[0]]],[[[0],[5]],[[0],[4]]],[[[0],[9]],[[0],[6]]],[[[4],[8]],[[1],[7]]],[[[4],[9]],[[1],[9]]],[[[4],[3]],[[1],[2]]],[[[4],[4]],[[1],[4]]],[[[4],[1]],[[1],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 4,
+          "Width": 3,
+          "Height": 5,
+          "CellCount": 15,
+          "CountX": 1,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 5
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 1,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 2,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[8]],[[1],[4]]],[[[0],[7]],[[0],[0]]],[[[0],[9]],[[0],[8]]],[[[3],[9]],[[1],[9]]],[[[4],[7]],[[4],[0]]],[[[4],[9]],[[4],[8]]],[[[3],[2]],[[2],[1]]],[[[1],[2]],[[1],[1]]],[[[3],[3]],[[1],[3]]],[[[3],[0]],[[1],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 0,
+          "Y": 4,
+          "Width": 5,
+          "Height": 2,
+          "CellCount": 10,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 2,
+          "Y": 8,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 2,
+          "Height": 3,
+          "CellCount": 6,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 2,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 1,
+          "Width": 3,
+          "Height": 2,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 3,
+          "Height": 1,
+          "CellCount": 3,
+          "CountX": 1,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[4],[5]],[[0],[4]]],[[[3],[9]],[[2],[8]]],[[[1],[9]],[[0],[7]]],[[[1],[6]],[[0],[6]]],[[[4],[9]],[[4],[6]]],[[[3],[7]],[[2],[6]]],[[[3],[2]],[[1],[1]]],[[[0],[3]],[[0],[0]]],[[[3],[3]],[[1],[3]]],[[[4],[3]],[[4],[0]]],[[[3],[0]],[[1],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 0,
+          "Y": 3,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 2,
+          "Height": 4,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 3,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 4
+        },
+        {
+          "X": 4,
+          "Y": 5,
+          "Width": 1,
+          "Height": 5,
+          "CellCount": 5,
+          "CountX": 0,
+          "CountY": 4
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 2,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[3],[4]],[[0],[3]]],[[[2],[9]],[[1],[6]]],[[[0],[9]],[[0],[6]]],[[[3],[9]],[[3],[6]]],[[[3],[5]],[[0],[5]]],[[[4],[4]],[[4],[0]]],[[[4],[9]],[[4],[5]]],[[[3],[1]],[[0],[1]]],[[[3],[2]],[[0],[2]]],[[[3],[0]],[[0],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 0,
+          "Y": 2,
+          "Width": 5,
+          "Height": 3,
+          "CellCount": 15,
+          "CountX": 4,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 7,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 5,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 4,
+          "Y": 7,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 2,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 1,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[4],[4]],[[0],[2]]],[[[3],[7]],[[0],[7]]],[[[3],[9]],[[0],[8]]],[[[4],[6]],[[4],[5]]],[[[4],[9]],[[4],[7]]],[[[3],[6]],[[0],[5]]],[[[3],[0]],[[0],[0]]],[[[3],[1]],[[0],[1]]],[[[4],[1]],[[4],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 1,
+          "Y": 3,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 1,
+          "CountY": 1
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 8,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 4
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 7,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 9,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 5,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 3,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 0,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 1
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 2,
+          "Width": 2,
+          "Height": 1,
+          "CellCount": 2,
+          "CountX": 1,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 0
+        }
+      ],
+      "Solution": "[[[[4],[4]],[[1],[3]]],[[[0],[7]],[[0],[0]]],[[[0],[9]],[[0],[8]]],[[[4],[8]],[[1],[7]]],[[[4],[9]],[[1],[9]]],[[[4],[6]],[[1],[5]]],[[[3],[1]],[[2],[0]]],[[[1],[2]],[[1],[0]]],[[[3],[2]],[[2],[2]]],[[[4],[2]],[[4],[0]]]]"
+    },
+    {
+      "Width": 5,
+      "Height": 10,
+      "GameShapes": [
+        {
+          "X": 0,
+          "Y": 3,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 2,
+          "CountY": 0
+        },
+        {
+          "X": 1,
+          "Y": 6,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 6,
+          "Width": 1,
+          "Height": 2,
+          "CellCount": 2,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 8,
+          "Width": 4,
+          "Height": 2,
+          "CellCount": 8,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 2,
+          "Y": 6,
+          "Width": 2,
+          "Height": 2,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 0,
+          "Y": 5,
+          "Width": 4,
+          "Height": 1,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 0
+        },
+        {
+          "X": 4,
+          "Y": 0,
+          "Width": 1,
+          "Height": 6,
+          "CellCount": 6,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 4,
+          "Y": 6,
+          "Width": 1,
+          "Height": 4,
+          "CellCount": 4,
+          "CountX": 0,
+          "CountY": 3
+        },
+        {
+          "X": 1,
+          "Y": 0,
+          "Width": 2,
+          "Height": 3,
+          "CellCount": 6,
+          "CountX": 1,
+          "CountY": 2
+        },
+        {
+          "X": 0,
+          "Y": 0,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        },
+        {
+          "X": 3,
+          "Y": 0,
+          "Width": 1,
+          "Height": 3,
+          "CellCount": 3,
+          "CountX": 0,
+          "CountY": 2
+        }
+      ],
+      "Solution": "[[[[3],[4]],[[0],[3]]],[[[1],[7]],[[1],[6]]],[[[0],[7]],[[0],[6]]],[[[3],[9]],[[0],[8]]],[[[3],[7]],[[2],[6]]],[[[3],[5]],[[0],[5]]],[[[4],[5]],[[4],[0]]],[[[4],[9]],[[4],[6]]],[[[2],[2]],[[1],[0]]],[[[0],[2]],[[0],[0]]],[[[3],[2]],[[3],[0]]]]"
+    }
+  ]
+
+}

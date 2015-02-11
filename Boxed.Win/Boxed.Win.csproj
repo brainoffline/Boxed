@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90BF33AE-46DE-49CE-839A-126594ED483C}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Boxed.Win</RootNamespace>
+    <AssemblyName>Boxed.Win</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Boxed.Win_StoreKey.pfx</PackageCertificateKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>85015919</NuGetPackageImportStamp>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>E77D67681CC418D95FBF45DDCD20C0F2FA146D15</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\Boxed.Common\Boxed.Common.csproj">
+      <Project>{ae3620d6-f4fd-4cd8-8956-7b2261270109}</Project>
+      <Name>Boxed.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Brain.Lib\Brain.Lib.csproj">
+      <Project>{537b1376-16ff-4579-b29c-a73f83da69ec}</Project>
+      <Name>Brain.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Boxed\Common\AnimationHelper.cs">
+      <Link>Common\AnimationHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Boxed\Controls\Brian.xaml.cs">
+      <Link>Controls\Brian.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\Boxed\Controls\SquareControl.xaml.cs">
+      <Link>Controls\SquareControl.xaml.cs</Link>
+    </Compile>
+    <Compile Include="AboutSettings.xaml.cs">
+      <DependentUpon>AboutSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebViewExtensions.cs" />
+    <Compile Include="HowToPage.xaml.cs">
+      <DependentUpon>HowToPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HubPage.xaml.cs">
+      <DependentUpon>HubPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsSettings.xaml.cs">
+      <DependentUpon>OptionsSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayPage.xaml.cs">
+      <DependentUpon>PlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataModel\SampleDataSource.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="..\Boxed\Resources\Fonts\DOTFONT.TTF">
+      <Link>Resources\Fonts\DOTFONT.TTF</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Black.ttf">
+      <Link>Resources\Fonts\Roboto-Black.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-BlackItalic.ttf">
+      <Link>Resources\Fonts\Roboto-BlackItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Bold.ttf">
+      <Link>Resources\Fonts\Roboto-Bold.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-BoldItalic.ttf">
+      <Link>Resources\Fonts\Roboto-BoldItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-Bold.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-Bold.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-BoldItalic.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-BoldItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-Italic.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-Italic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-Light.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-Light.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-LightItalic.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-LightItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\RobotoCondensed-Regular.ttf">
+      <Link>Resources\Fonts\RobotoCondensed-Regular.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Italic.ttf">
+      <Link>Resources\Fonts\Roboto-Italic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Light.ttf">
+      <Link>Resources\Fonts\Roboto-Light.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-LightItalic.ttf">
+      <Link>Resources\Fonts\Roboto-LightItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Medium.ttf">
+      <Link>Resources\Fonts\Roboto-Medium.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-MediumItalic.ttf">
+      <Link>Resources\Fonts\Roboto-MediumItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Regular.ttf">
+      <Link>Resources\Fonts\Roboto-Regular.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-Thin.ttf">
+      <Link>Resources\Fonts\Roboto-Thin.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\Fonts\Roboto-ThinItalic.ttf">
+      <Link>Resources\Fonts\Roboto-ThinItalic.ttf</Link>
+    </Content>
+    <Content Include="..\Boxed\Packs\PackA.json">
+      <Link>Packs\PackA.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\PackB.json">
+      <Link>Packs\PackB.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetA1.json">
+      <Link>Packs\SetA1.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetA2.json">
+      <Link>Packs\SetA2.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetA3.json">
+      <Link>Packs\SetA3.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetA4.json">
+      <Link>Packs\SetA4.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetA5.json">
+      <Link>Packs\SetA5.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetB1.json">
+      <Link>Packs\SetB1.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetB2.json">
+      <Link>Packs\SetB2.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetB3.json">
+      <Link>Packs\SetB3.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetB4.json">
+      <Link>Packs\SetB4.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Packs\SetB5.json">
+      <Link>Packs\SetB5.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Boxed\Resources\pop.mp3">
+      <Link>Resources\pop.mp3</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\popHi.mp3">
+      <Link>Resources\popHi.mp3</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\poplow.mp3">
+      <Link>Resources\poplow.mp3</Link>
+    </Content>
+    <Content Include="..\Boxed\Resources\popmed.mp3">
+      <Link>Resources\popmed.mp3</Link>
+    </Content>
+    <Content Include="analytics.xml" />
+    <Content Include="Assets\GameShot1.png" />
+    <Content Include="Assets\Grid.png" />
+    <Content Include="Assets\Logo.16.png" />
+    <Content Include="Assets\Logo.256.png" />
+    <Content Include="Assets\Logo.32.png" />
+    <Content Include="Assets\Logo.48.png" />
+    <Content Include="Assets\Logo030.scale-100.png" />
+    <Content Include="Assets\Logo030.scale-140.png" />
+    <Content Include="Assets\Logo030.scale-180.png" />
+    <Content Include="Assets\Logo030.scale-80.png" />
+    <Content Include="Assets\Logo070.scale-100.png" />
+    <Content Include="Assets\Logo070.scale-140.png" />
+    <Content Include="Assets\Logo070.scale-180.png" />
+    <Content Include="Assets\Logo070.scale-80.png" />
+    <Content Include="Assets\Logo150.scale-100.png" />
+    <Content Include="Assets\Logo150.scale-140.png" />
+    <Content Include="Assets\Logo150.scale-180.png" />
+    <Content Include="Assets\Logo150.scale-80.png" />
+    <Content Include="Assets\Logo310.scale-100.png" />
+    <Content Include="Assets\Logo310.scale-140.png" />
+    <Content Include="Assets\Logo310.scale-180.png" />
+    <Content Include="Assets\Logo310.scale-80.png" />
+    <Content Include="Assets\LogoBadge.scale-100.png" />
+    <Content Include="Assets\LogoBadge.scale-140.png" />
+    <Content Include="Assets\LogoBadge.scale-180.png" />
+    <Content Include="Assets\LogoStore.scale-100.png" />
+    <Content Include="Assets\LogoStore.scale-140.png" />
+    <Content Include="Assets\LogoStore.scale-180.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-140.png" />
+    <Content Include="Assets\SplashScreen.scale-180.png" />
+    <Content Include="Assets\WideLogo310.scale-100.png" />
+    <Content Include="Assets\WideLogo310.scale-140.png" />
+    <Content Include="Assets\WideLogo310.scale-180.png" />
+    <Content Include="Assets\WideLogo310.scale-80.png" />
+    <Content Include="FodyWeavers.xml" />
+    <None Include="analytics.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Boxed.Win_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="Common\ReadMe.txt" />
+    <None Include="Boxed.Win_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <PRIResource Include="Strings\en-US\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+    <Content Include="..\Boxed\Resources\Carefree.mp3">
+      <Link>Resources\Carefree.mp3</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataModel\SampleData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="..\Boxed\Controls\Brian.xaml">
+      <Link>Controls\Brian.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Boxed\Controls\SquareControl.xaml">
+      <Link>Controls\SquareControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Boxed\Resources\Colors.xaml">
+      <Link>Resources\Colors.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AboutSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HowToPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HubPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OptionsSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GoogleAnalytics">
+      <HintPath>..\packages\GoogleAnalyticsSDK.1.2.12\lib\windows81\GoogleAnalytics.winmd</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalytics.Core">
+      <HintPath>..\packages\GoogleAnalyticsSDK.1.2.12\lib\windows81\GoogleAnalytics.Core.winmd</HintPath>
+    </Reference>
+    <Reference Include="NotificationsExtensions">
+      <HintPath>..\packages\NotificationsExtensions.UniversalApps.1.0.3\lib\netcore451\NotificationsExtensions.winmd</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged">
+      <HintPath>..\packages\PropertyChanged.Fody.1.49.0\Lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="..\AnimationManager.Shared\AnimationManager.Shared.projitems" Label="Shared" Condition="Exists('..\AnimationManager.Shared\AnimationManager.Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\packages\Fody.1.26.4\build\Fody.targets" Condition="Exists('..\packages\Fody.1.26.4\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.1.26.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.26.4\build\Fody.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

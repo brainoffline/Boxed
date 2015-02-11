@@ -1,0 +1,263 @@
+﻿<Page
+    x:Class="Boxed.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Boxed"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:bam="using:Brain.Animate"
+    xmlns:controls="using:Boxed.Controls"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <!--
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <CommonNavigationTransitionInfo IsStaggeringEnabled="True"/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    -->
+
+    <Grid x:Name="LayoutRoot"  Background="Black" >
+    	<VisualStateManager.VisualStateGroups>
+    		<VisualStateGroup x:Name="PageVisualStateGroup">
+    			<VisualState x:Name="Normal"/>
+    			<VisualState x:Name="ShowGames"/>
+    		</VisualStateGroup>
+    	</VisualStateManager.VisualStateGroups>
+
+        <!-- Sky looking gradient
+        <Grid Height="230" VerticalAlignment="Top" >
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#00ECE8AB"/>
+                    <GradientStop Color="#66FFFFFF" Offset="0.914"/>
+                    <GradientStop Color="#00ECE8AB" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        -->
+
+        <Grid x:Name="gameSetGrid" VerticalAlignment="Top">
+            <TextBlock Text="{Binding SelectedGameSet.Data.Name}" FontSize="36" Margin="20" 
+                       HorizontalAlignment="Center" />
+        </Grid>
+        
+        <GridView x:Name="gameSelectionGrid"
+                ItemsSource="{Binding SelectedGameSet.Games}" 
+                SelectionMode="None"
+                IsItemClickEnabled="True" ItemClick="Game_Click"    
+                ContinuumNavigationTransitionInfo.ExitElementContainer="True"
+                AutomationProperties.AutomationId="ItemGridView"
+                AutomationProperties.Name="Items In Group" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,150,0,0"
+            >
+
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Horizontal" ItemHeight="75" ItemWidth="70" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="65" Height="70" Margin="0,0,5,5" >
+                        <Border Background="{Binding ElementName=gameSetGrid, Path=Background}" Opacity="{Binding BackgroundOpacity}" />
+
+                        <Border BorderThickness="2" BorderBrush="{Binding ElementName=gameSetGrid, Path=Background}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="{Binding Level}" 
+						                        TextWrapping="NoWrap" 
+						                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+						                        FontSize="32" Foreground="#DEFFFFFF" />
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4" Grid.Row="1" HorizontalAlignment="Center" 
+                                                        Visibility="{Binding HasHighScore, Converter={StaticResource Visibility}}">
+                                    <TextBlock Text="{Binding HighScore}" Foreground="Black" FontSize="18.667"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+        </GridView>
+
+        <Grid x:Name="pivotGrid" Background="{Binding ElementName=gameSetGrid, Path=Background}">
+            <Pivot Opacity="1"
+                x:Name="pivot" 
+                Style="{StaticResource BrainPivotStyle}" SelectionChanged="pivot_SelectionChanged" >
+
+                <PivotItem Header="BrainOffline" Style="{StaticResource BrainPivotItemStyle}">
+                    <Grid>
+                        <ListView x:Name="pivot1List"
+                                  VerticalAlignment="Center"
+                                  ItemContainerStyle="{StaticResource ListViewItemStyle}"
+                              >
+
+                            <bam:AnimatingTextBlock 
+                                Text="BrainOffline" 
+                                FontFamily="Resources/Fonts/Roboto-Light.ttf#Roboto" FontSize="32" FontWeight="Thin" 
+                                Foreground="White"
+                                Interval="0.1" PauseAfter="2" 
+                                HorizontalAlignment="Center" 
+                                >
+                                <bam:AnimatingTextBlock.IdleAnimation>
+                                    <bam:WobbleAnimation Distance="10" />
+                                </bam:AnimatingTextBlock.IdleAnimation>
+                            </bam:AnimatingTextBlock>
+
+                            <bam:AnimatingTextBlock 
+                                x:Name="GoJumpAnimatingTextBlock" 
+                                Text="BOXED" 
+                                FontFamily="Resources/Fonts/Roboto-Thin.ttf#Roboto" FontSize="64"  
+                                Foreground="{StaticResource DarkBrush}"
+                                Interval="0.1" PauseAfter="2" 
+                                HorizontalAlignment="Center" Margin="0,25,0,50"
+                                >
+                                <bam:AnimatingTextBlock.IdleAnimation>
+                                    <bam:JumpAnimation Delay="2" />
+                                </bam:AnimatingTextBlock.IdleAnimation>
+                            </bam:AnimatingTextBlock>
+
+                            <Button 
+                                Content="How to Play" 
+                                Style="{StaticResource BigClearButton}" 
+                                Click="OnHowToPlayClick" />
+
+                            <Button 
+                                Style="{StaticResource BigClearButton}" 
+                                Click="OnRateUsButtonClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Like"/>
+                                    <TextBlock Text=" &#xE19F;" FontFamily="Segoe UI Symbol" FontSize="24" VerticalAlignment="Center" Margin="0,0,-20,0" />
+                                </StackPanel>
+                            </Button>
+
+                            <Button 
+                                Content="About" 
+                                Style="{StaticResource BigClearButton}" 
+                                Click="OnAboutButtonClick"  />
+                            
+                            <Button Style="{StaticResource BigClearButton}"
+                                    Click="ToggleMusicClick">
+                                <Grid>
+                                    <Image Source="Assets/NoMusic.png" Width="40" Visibility="{Binding IsMusicEnabled, Converter={StaticResource InverseVisibility}}" />
+                                    <Image Source="Assets/Music.png" Width="40" Visibility="{Binding IsMusicEnabled, Converter={StaticResource Visibility}}"/>
+                                </Grid>
+                                
+                            </Button>
+
+                        </ListView>
+                        
+                    </Grid>
+
+                </PivotItem>
+
+
+                <PivotItem x:Name="StartPivotItem" Header="Start" Style="{StaticResource BrainPivotItemStyle}" >
+                    <Grid>
+
+                        <controls:Brian 
+                        x:Name="brian" 
+                        Foreground="White"
+                        Width="100" Height="100" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Pivot.SlideInAnimationGroup="1">
+
+                            <bam:AnimationTrigger.Open>
+                                <bam:BounceInDownAnimation Delay="0.3" Duration="0.8" />
+                            </bam:AnimationTrigger.Open>
+
+                        </controls:Brian>
+
+                        <Grid VerticalAlignment="Top" >
+
+                            <bam:AnimatingTextBlock 
+                            Text="BOXED" 
+                            FontFamily="Resources/Fonts/Roboto-Thin.ttf#Roboto" FontSize="64" FontWeight="Thin" 
+                            Foreground="White"
+                            Interval="0.1" PauseAfter="2" 
+                            HorizontalAlignment="Center" Margin="0,150,0,0"
+                            >
+                                <bam:AnimatingTextBlock.IdleAnimation>
+                                    <bam:JumpAnimation Delay="2.0" />
+                                </bam:AnimatingTextBlock.IdleAnimation>
+                            </bam:AnimatingTextBlock>
+                        </Grid>
+
+                        <Button 
+                        Content="Tap to play" 
+                        Style="{StaticResource ClearButtonStyle}"
+                        VerticalContentAlignment="Bottom"
+                        Click="OnTapToPlayClick" Margin="0,0,0,2" Padding="0,0,0,24"
+                        Pivot.SlideInAnimationGroup="2"
+                        />
+                    </Grid>
+                </PivotItem>
+
+                <PivotItem Header="Begin" Style="{StaticResource BrainPivotItemStyle}" >
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" Pivot.SlideInAnimationGroup="1">
+                            <bam:AnimatingTextBlock 
+                            x:Name="Pivot3Header"
+                            Text="BOXED" 
+                            FontFamily="Resources/Fonts/Roboto-Thin.ttf#Roboto" FontSize="64" FontWeight="Thin" 
+                            Foreground="{StaticResource DarkBrush}"
+                            Interval="0.1" PauseAfter="2" 
+                            HorizontalAlignment="Center" Margin="0,50,0,50"
+                            >
+                                <bam:AnimatingTextBlock.IdleAnimation>
+                                    <bam:SwingAnimation Delay="2" />
+                                </bam:AnimatingTextBlock.IdleAnimation>
+                            </bam:AnimatingTextBlock>
+                        </Grid>
+
+                        <!-- 
+                        ItemsSource="{Binding AllGameSets}" 
+                        Pivot.SlideInAnimationGroup="2"
+                        -->
+                        <ListView x:Name="gameSetList"
+                                  Grid.Row="1"
+                                  ItemContainerStyle="{StaticResource ListViewItemStyle}"
+                                  Opacity="0"
+                              >
+
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Content="{Binding Name}"
+                                        Style="{StaticResource BigClearButton}" 
+                                        Click="GameSetButton_Clicked"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+                    </Grid>
+                </PivotItem>
+
+
+            </Pivot>
+        </Grid>
+
+        <Image x:Name="splashImage" Source="Assets/SplashScreenImage.png" d:IsHidden="True" Tapped="SplashImage_OnTapped" />
+
+
+    </Grid>
+</Page>

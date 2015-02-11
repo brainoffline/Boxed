@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="23236DrDevelop.SquareMe" Publisher="CN=2C5181F2-C30F-4EA0-A676-61DC3C764E8B" Version="2.0.0.3" />
+  <Properties>
+    <DisplayName>Boxed</DisplayName>
+    <PublisherDisplayName>BrainOffline</PublisherDisplayName>
+    <Logo>Assets\LogoStore.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Boxed.Win.App">
+      <m2:VisualElements DisplayName="Boxed" Square150x150Logo="Assets\Logo150.png" Square30x30Logo="Assets\Logo030.png" Description="Boxed" ForegroundText="light" BackgroundColor="#000000">
+        <m2:DefaultTile Square70x70Logo="Assets\Logo070.png" Wide310x150Logo="Assets\WideLogo310.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000" />
+        <m2:ApplicationView MinWidth="width500" />
+      </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

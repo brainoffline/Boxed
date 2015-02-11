@@ -1,0 +1,11 @@
+﻿{
+    "Name": "Starter Pack",
+
+    "GameSetFilenames": [
+        "SetA1.json",
+        "SetA2.json",
+        "SetA3.json",
+        "SetA4.json",
+        "SetA5.json",
+    ]
+}

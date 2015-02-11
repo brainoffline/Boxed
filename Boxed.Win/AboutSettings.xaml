@@ -1,0 +1,36 @@
+﻿<SettingsFlyout x:Class="Boxed.Win.AboutSettings"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:local="using:Boxed.Win"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                mc:Ignorable="d"
+                IconSource="/Assets/Logo030.png"
+                Title="About"
+                d:DesignWidth="346"
+                RequestedTheme="Light"
+                Background="WhiteSmoke"
+                HeaderBackground="DimGray"
+                BorderBrush="DarkGray"
+                BorderThickness="2">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <TextBlock Text="Boxed"
+                       Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock Text="By BrainOffline"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       Margin="0,0,0,20"
+                       TextWrapping="Wrap" />
+
+            <HyperlinkButton Content="Privacy Policy" 
+                             NavigateUri="http://brainoffline.github.io/privacy.html"
+                             Padding="0,4,12,5" />
+
+        </StackPanel>
+
+    </StackPanel>
+</SettingsFlyout>

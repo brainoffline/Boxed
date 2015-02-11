@@ -1,0 +1,45 @@
+﻿<SettingsFlyout x:Class="Boxed.Win.HowToPage"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:local="using:Boxed.Win"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                mc:Ignorable="d"
+                IconSource="Assets/Logo030.png"
+                Title="How To play"
+                Background="WhiteSmoke"
+                HeaderBackground="DimGray"
+                BorderBrush="DarkGray"
+                BorderThickness="2"
+                d:DesignWidth="400"
+                MinWidth="400">
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <TextBlock HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       FontSize="18.667"
+                       Margin="0,0,0,20">
+                <Run Text="Boxed" FontWeight="SemiBold"/>
+    			<Run Text=" is played on a rectangular grid. Some of the squares in the grid are numbered. The objective is to divide the grid into rectangular and square boxes such that each box contains exactly one number, and that number represents the area of the box." />
+            </TextBlock>
+            <Image Source="/Assets/GameShot1.png"
+                   Width="300"
+                   HorizontalAlignment="Center" />
+            <TextBlock HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       FontSize="18.667"
+                       Margin="0,20,0,0">
+    			<Run Text="To place a box, start by tapping the number, then draw the outline of the box you want. Boxes must be square or rectangular." />
+    			<Run Text="To remove a box, simply tap anywhere on the box." />
+            </TextBlock>
+
+
+        </StackPanel>
+
+
+    </StackPanel>
+</SettingsFlyout>

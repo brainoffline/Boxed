@@ -1,0 +1,4 @@
+MainPackage=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\bin\ARM\Release\Boxed.Win_2.0.0.1_Bundle\Boxed.Win_2.0.0.1_ARM.appx
+SymbolPackage=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\AppPackages\Boxed.Win_2.0.0.1_Test\Boxed.Win_2.0.0.1_ARM.appxsym
+ResourcePack=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\bin\ARM\Release\Boxed.Win_2.0.0.1_Bundle\Boxed.Win_2.0.0.1_scale-140.appx
+ResourcePack=F:\Dev.BrainOffline\Games\Boxed\Boxed.Win\bin\ARM\Release\Boxed.Win_2.0.0.1_Bundle\Boxed.Win_2.0.0.1_scale-180.appx
