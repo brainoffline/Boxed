@@ -54,6 +54,19 @@ namespace Boxed.Win
             }
         }
 
+        public bool IsNetworkEnabled
+        {
+            get { return GameData.Current.IsNetworkEnabled; }
+            set
+            {
+                GameData.Current.IsNetworkEnabled = value;
+                GameData.Current.SaveData();
+
+                if (GameData.Current.IsNetworkEnabled)
+                    GameManager.Current.LoadInternetGamePacks();
+            }
+        }
+
         private async void ResetAllScores_OnClick(object sender, RoutedEventArgs e)
         {
             var x = await MessageBox.ShowAsync("Press Yes to erase all scores", "Are you sure?", MessageBoxButton.YesNo);

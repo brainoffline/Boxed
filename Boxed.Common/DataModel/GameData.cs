@@ -24,6 +24,7 @@ namespace Boxed.DataModel
 
         public bool MuteMusic { get; set; }
         public bool MuteSounds { get; set; }
+        public bool IsNetworkEnabled { get; set; }
 
         public GameData()
         {

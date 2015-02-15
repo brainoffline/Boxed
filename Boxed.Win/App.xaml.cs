@@ -78,6 +78,7 @@ namespace Boxed.Win
 #endif
 
             await GameManager.Current.LoadKnownGamePacks();
+            await GameManager.Current.LoadInternetGamePacks();
             await GameData.Current.LoadData();
 
             DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;

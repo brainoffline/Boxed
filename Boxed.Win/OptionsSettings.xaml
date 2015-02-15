@@ -22,9 +22,7 @@
 
         <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
 
-            <!--
             <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Sound" />
-            -->
 
             <ToggleSwitch HorizontalAlignment="Stretch"
                           Header="Sound"
@@ -35,6 +33,14 @@
                           Header="Music"
                           IsOn="{Binding IsMusicOn, Mode=TwoWay}"
                           Margin="0,0,0,25" />
+
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}"
+                       Text="Boxed can load additional games from the internet." />
+            
+            <ToggleSwitch x:Name="NetworkSwitch"
+                          OnContent="Load additional levels"
+                          OffContent="Restrict Data Consumption"
+                          IsOn="{Binding IsNetworkEnabled, Mode=TwoWay}" />
 
             <Button Content="Reset all scores"
                     Width="175" 
