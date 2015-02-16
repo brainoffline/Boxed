@@ -51,7 +51,7 @@ namespace Boxed.Common
                 var folder = await ApplicationData.Current.LocalFolder.CreateFolderAsync(folderName,
                     CreationCollisionOption.OpenIfExists);
 
-                var file = await folder.GetFileAsync(filename);
+                var file = await folder.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
 
                 await FileIO.WriteTextAsync(file, json);
 
