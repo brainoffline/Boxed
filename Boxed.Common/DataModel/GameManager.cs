@@ -147,12 +147,12 @@ namespace Boxed.DataModel
 
                             gamePack.GameSets.Add(gameSet);
                         }
-                    }
 
-                    foreach (var gamePack in GamePacks)
-                    {
+                        GamePacks.Add(gamePack);
+
                         AllGameSets.AddRange(gamePack.GameSets);
                     }
+
                 }
                 catch (Exception ex)
                 {

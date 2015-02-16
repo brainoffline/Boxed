@@ -13,16 +13,19 @@ namespace Boxed.DataModel
         [JsonIgnore]
         public GamePack GamePack { get; set; }
 
+        [JsonIgnore]
         public int GameCount
         {
             get { return Games != null ? Games.Count : 0; }
         }
 
+        [JsonIgnore]
         public int GamesPlayed
         {
             get { return GameData.Current.GamesPlayedForGameSet(this); }
         }
 
+        [JsonIgnore]
         public string DisplayGamesPlayed
         {
             get

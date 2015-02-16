@@ -21,16 +21,19 @@ namespace Boxed.DataModel
         [JsonIgnore]
         public int Index { get; set; }
 
+        [JsonIgnore]
         public int DisplayIndex
         {
             get { return Index + 1; }
         }
 
+        [JsonIgnore]
         public string DisplayLevel
         {
             get { return string.Format("{0} / {1}", Index + 1, GameSet.GameCount); }
         }
 
+        [JsonIgnore]
         public string BackgroundColor
         {
             get
@@ -42,6 +45,7 @@ namespace Boxed.DataModel
             }
         }
 
+        [JsonIgnore]
         public string BestTime
         {
             get
