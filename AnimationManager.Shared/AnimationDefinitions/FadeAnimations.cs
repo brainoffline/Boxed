@@ -128,8 +128,8 @@ namespace Brain.Animate
     {
         public double Distance
         {
-            get { return DistanceX; }
-            set { DistanceX = value; }
+            get { return DistanceY; }
+            set { DistanceY = value; }
         }
 
         public FadeInLeftAnimation()
@@ -143,8 +143,8 @@ namespace Brain.Animate
     {
         public double Distance
         {
-            get { return DistanceX; }
-            set { DistanceX = value; }
+            get { return DistanceY; }
+            set { DistanceY = value; }
         }
 
         public FadeInRightAnimation()
@@ -204,8 +204,8 @@ namespace Brain.Animate
     {
         public double Distance
         {
-            get { return DistanceX; }
-            set { DistanceX = value; }
+            get { return DistanceY; }
+            set { DistanceY = value; }
         }
 
         public FadeOutRightAnimation()

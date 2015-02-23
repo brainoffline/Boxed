@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Phone.UI.Input;
 using Windows.UI.ViewManagement;
 using Brain.Animate.NavigationAnimations;
 #if WINDOWS_81_PORTABLE || NETFX_CORE

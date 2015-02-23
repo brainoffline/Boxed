@@ -103,8 +103,7 @@
         <Setter Property="ContentTransitions">
             <Setter.Value>
                 <TransitionCollection>
-                    <EntranceThemeTransition/>
-                    <!-- NavigationThemeTransition/ -->
+                    <NavigationThemeTransition/>
                 </TransitionCollection>
             </Setter.Value>
         </Setter>

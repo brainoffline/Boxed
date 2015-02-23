@@ -74,6 +74,7 @@ namespace Brain.Animate
             return tcs.Task;
         }
 
+
         public static void StopAnimations(this FrameworkElement element)
         {
             AnimationManager.StopAnimations(element);
@@ -100,18 +101,18 @@ namespace Brain.Animate
             return AnimationManager.AnimationStoryboard( element, RotateAnimation(element, seconds, rotation, easingFunction), null, completedAction);
         }
 
-        public static Task<FrameworkElement> RotateAsync(this FrameworkElement element, 
+        public static async Task<FrameworkElement> RotateAsync(this FrameworkElement element, 
             double seconds, double rotation, EasingFunctionBase easingFunction = null, AnimationParameters animationParameters = null)
         {
             if (!(seconds <= 0))
-                return AnimateAsync(element, RotateAnimation(element, seconds, rotation, easingFunction), animationParameters);
+                return await AnimateAsync(element, RotateAnimation(element, seconds, rotation, easingFunction), animationParameters);
 
             AnimationManager.PrepareElement(element);
             var transform = element.RenderTransform as CompositeTransform;
-            if (transform == null) return Task.FromResult(element);
+            if (transform == null) return element;
 
             transform.Rotation = rotation;
-            return Task.FromResult(element);
+            return element;
         }
 
 
@@ -136,19 +137,19 @@ namespace Brain.Animate
             return AnimationManager.AnimationStoryboard(element, MoveToAnimation(element, seconds, point, easingFunction), animationParameters, completedAction);
         }
 
-        public static Task<FrameworkElement> MoveToAsync(this FrameworkElement element,
+        public static async Task<FrameworkElement> MoveToAsync(this FrameworkElement element,
             double seconds, Point point, EasingFunctionBase easingFunction = null, AnimationParameters animationParameters = null)
         {
             if (seconds > 0.0)
-                return AnimateAsync(element, MoveToAnimation(element, seconds, point, easingFunction), animationParameters);
+                return await AnimateAsync(element, MoveToAnimation(element, seconds, point, easingFunction), animationParameters);
 
             AnimationManager.PrepareElement(element);
             var transform = element.RenderTransform as CompositeTransform;
-            if (transform == null) return Task.FromResult(element);
+            if (transform == null) return element;
 
             transform.TranslateX = point.X;
             transform.TranslateY = point.Y;
-            return Task.FromResult(element);
+            return element;
         }
 
 
@@ -173,19 +174,19 @@ namespace Brain.Animate
             return AnimationManager.AnimationStoryboard(element, ScaleToAnimation(element, seconds, scale, easingFunction), animationParameters, completedAction);
         }
 
-        public static Task<FrameworkElement> ScaleToAsync(this FrameworkElement element,
+        public static async Task<FrameworkElement> ScaleToAsync(this FrameworkElement element,
             double seconds, Point scale, EasingFunctionBase easingFunction = null, AnimationParameters animationParameters = null)
         {
             if (seconds > 0)
-                return AnimateAsync(element, ScaleToAnimation(element, seconds, scale, easingFunction), animationParameters);
+                return await AnimateAsync(element, ScaleToAnimation(element, seconds, scale, easingFunction), animationParameters);
 
             AnimationManager.PrepareElement(element);
             var transform = element.RenderTransform as CompositeTransform;
-            if (transform == null) return Task.FromResult(element);
+            if (transform == null) return element;
 
             transform.ScaleX = scale.X;
             transform.ScaleY = scale.Y;
-            return Task.FromResult(element);
+            return element;
         }
 
 
@@ -210,51 +211,21 @@ namespace Brain.Animate
             return AnimationManager.AnimationStoryboard(element, SkewToAnimation(element, seconds, skew, easingFunction), animationParameters, completedAction);
         }
 
-        public static Task<FrameworkElement> SkewToAsync(this FrameworkElement element,
+        public async static Task<FrameworkElement> SkewToAsync(this FrameworkElement element,
             double seconds, Point skew, EasingFunctionBase easingFunction = null, AnimationParameters animationParameters = null)
         {
             if (seconds > 0)
-                return AnimateAsync(element, SkewToAnimation(element, seconds, skew, easingFunction), animationParameters);
+                return await AnimateAsync(element, SkewToAnimation(element, seconds, skew, easingFunction), animationParameters);
 
             AnimationManager.PrepareElement(element);
             var transform = element.RenderTransform as CompositeTransform;
             if (transform == null)
-                return Task.FromResult(element);
+                return element;
 
             transform.SkewX = skew.X;
             transform.SkewY = skew.Y;
-            return Task.FromResult(element);
+            return element;
         }
-
-
-        private static IEnumerable<Timeline> OpacityToAnimation(this FrameworkElement element,
-            double seconds, double opacity, EasingFunctionBase easingFunction = null)
-        {
-            return new Timeline[]
-            {
-                element.AnimateProperty(AnimationProperty.Opacity )
-                       .AddEasingKeyFrame(seconds, opacity, easingFunction),
-            };
-        }
-
-
-        public static Storyboard OpacityToStoryboard(this FrameworkElement element,
-            double seconds, double opacity, EasingFunctionBase easingFunction = null,
-            AnimationParameters animationParameters = null, Action completedAction = null)
-        {
-            return AnimationManager.AnimationStoryboard(element, OpacityToAnimation(element, seconds, opacity, easingFunction), animationParameters, completedAction);
-        }
-
-        public static Task<FrameworkElement> OpacityToAsync(this FrameworkElement element,
-            double seconds, double opacity, EasingFunctionBase easingFunction = null, AnimationParameters animationParameters = null)
-        {
-            if (seconds > 0)
-                return AnimateAsync(element, OpacityToAnimation(element, seconds, opacity, easingFunction), animationParameters);
-
-            element.Opacity = opacity;
-            return Task.FromResult(element);
-        }
-
 
 
 

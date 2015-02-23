@@ -48,7 +48,8 @@ namespace Brain.Animate
 
     public class FloatAnimation : AnimationDefinition
     {
-        public double Distance { get; set; }
+        public double DistanceX { get; set; }
+        public double DistanceY { get; set; }
 
         public FloatAnimation()
         {
@@ -58,12 +59,21 @@ namespace Brain.Animate
 
         public override IEnumerable<Timeline> CreateAnimation(FrameworkElement element)
         {
-            return new Timeline[]
-            {
-                element.AnimateProperty(AnimationProperty.TranslateY)
-                    .AddEasingKeyFrame(0.0, 0, new QuadraticEase {EasingMode = EasingMode.EaseInOut})
-                    .AddEasingKeyFrame(Duration, Distance, new QuadraticEase {EasingMode = EasingMode.EaseInOut})
-            };
+            var animations = new List<Timeline>();
+
+            if (Math.Abs(DistanceY) > 0.0001)
+                animations.Add(
+                    element.AnimateProperty(AnimationProperty.TranslateY)
+                        .AddEasingKeyFrame(0.0, 0, new QuadraticEase {EasingMode = EasingMode.EaseInOut})
+                        .AddEasingKeyFrame(Duration, DistanceY, new QuadraticEase {EasingMode = EasingMode.EaseInOut}));
+
+            if (Math.Abs(DistanceX) > 0.0001)
+                animations.Add(
+                    element.AnimateProperty(AnimationProperty.TranslateX)
+                        .AddEasingKeyFrame(0.0, 0, new QuadraticEase { EasingMode = EasingMode.EaseInOut })
+                        .AddEasingKeyFrame(Duration, DistanceX, new QuadraticEase { EasingMode = EasingMode.EaseInOut }));
+
+            return animations;
         }
     }
 

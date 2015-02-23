@@ -55,7 +55,7 @@ namespace Brain.Animate
                     .AddDiscreteKeyFrame(0.0, 0),
                 element.AnimateProperty(AnimationProperty.RotationY)
                     .AddEasingKeyFrame(0, 80)
-                    .AddEasingKeyFrame(Duration, 0, new QuadraticEase()),
+                    .AddEasingKeyFrame(Duration, 0, new QuadraticEase()), 
                 element.AnimateProperty(AnimationProperty.Opacity)
                     .AddEasingKeyFrame(0.0, 1),
             };

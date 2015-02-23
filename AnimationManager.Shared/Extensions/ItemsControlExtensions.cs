@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Brain.Extensions;
 #if NETFX_CORE || WINDOWS_81_PORTABLE
 using Windows.Foundation;
 using Windows.UI.Xaml;
