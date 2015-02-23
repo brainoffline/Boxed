@@ -257,7 +257,7 @@
   <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
   </PropertyGroup>
-  <Import Project="..\..\..\..\Github\BrainOffline\AnimationManager\AnimationManager.Shared\AnimationManager.Shared.projitems" Label="Shared" Condition="Exists('..\..\..\..\Github\BrainOffline\AnimationManager\AnimationManager.Shared\AnimationManager.Shared.projitems')" />
+  <Import Project="..\AnimationManager.Shared\AnimationManager.Shared.projitems" Label="Shared" Condition="Exists('..\AnimationManager.Shared\AnimationManager.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <Import Project="..\packages\Fody.1.26.4\build\Fody.targets" Condition="Exists('..\packages\Fody.1.26.4\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

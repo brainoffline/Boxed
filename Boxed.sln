@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxed.Common", "Boxed.Commo
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\AnimationManager\AnimationManager.Shared\AnimationManager.Shared.projitems*{ac165943-f4de-49a6-843a-f3f26a19155d}*SharedItemsImports = 4
+		AnimationManager.Shared\AnimationManager.Shared.projitems*{ac165943-f4de-49a6-843a-f3f26a19155d}*SharedItemsImports = 4
 		AnimationManager.Shared\AnimationManager.Shared.projitems*{90bf33ae-46de-49ce-839a-126594ed483c}*SharedItemsImports = 4
 		AnimationManager.Shared\AnimationManager.Shared.projitems*{d729d034-893b-4d9b-8b0a-15bf6aa87dbb}*SharedItemsImports = 13
 	EndGlobalSection

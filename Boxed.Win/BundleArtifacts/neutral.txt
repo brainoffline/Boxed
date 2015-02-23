@@ -1,4 +1,4 @@
-MainPackage=F:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.0.0.5_Bundle\Boxed.Win_2.0.0.5_AnyCPU.appx
-SymbolPackage=F:\GitHub\BrainOffline\Boxed\Boxed.Win\AppPackages\Boxed.Win_2.0.0.5_Test\Boxed.Win_2.0.0.5_AnyCPU.appxsym
-ResourcePack=F:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.0.0.5_Bundle\Boxed.Win_2.0.0.5_scale-140.appx
-ResourcePack=F:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.0.0.5_Bundle\Boxed.Win_2.0.0.5_scale-180.appx
+MainPackage=D:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.1.0.6_Bundle\Boxed.Win_2.1.0.6_AnyCPU.appx
+SymbolPackage=D:\GitHub\BrainOffline\Boxed\Boxed.Win\AppPackages\Boxed.Win_2.1.0.6_Test\Boxed.Win_2.1.0.6_AnyCPU.appxsym
+ResourcePack=D:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.1.0.6_Bundle\Boxed.Win_2.1.0.6_scale-140.appx
+ResourcePack=D:\GitHub\BrainOffline\Boxed\Boxed.Win\bin\Release\Boxed.Win_2.1.0.6_Bundle\Boxed.Win_2.1.0.6_scale-180.appx
