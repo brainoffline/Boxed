@@ -63,8 +63,15 @@ namespace Boxed.Win
                 GameData.Current.SaveData();
 
                 if (GameData.Current.IsNetworkEnabled)
-                    GameManager.Current.LoadInternetGamePacks();
+                    LoadInternetGamePacks();
             }
+        }
+
+        private async void LoadInternetGamePacks()
+        {
+            bool success = await GameManager.Current.LoadInternetGamePacks();
+            if (success)
+                ((App)Application.Current).ResetPages();
         }
 
         private async void ResetAllScores_OnClick(object sender, RoutedEventArgs e)
@@ -74,7 +81,7 @@ namespace Boxed.Win
 
             GameData.Current.ResetScores();
 
-            // TODO: Force Refresh of screen
+            ((App)Application.Current).ResetPages();
         }
     }
 }

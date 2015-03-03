@@ -28,8 +28,13 @@ using PropertyChanged;
 
 namespace Boxed.Win
 {
+    public interface IResetPage
+    {
+        void ResetPage();
+    }
+
     [ImplementPropertyChanged]
-    public sealed partial class HubPage : Page
+    public sealed partial class HubPage : Page, IResetPage
     {
         private NavigationHelper navigationHelper;
         public NavigationHelper NavigationHelper
@@ -175,6 +180,13 @@ namespace Boxed.Win
                         suggestionCollection.AppendQuerySuggestion(gameSet.Name);
                 }
             }
+        }
+
+        public void ResetPage()
+        {
+            AllPacks.Clear();
+            foreach (var gameSet in GameManager.Current.AllGameSets)
+                AllPacks.Add(gameSet);
         }
     }
 }

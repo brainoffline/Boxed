@@ -196,5 +196,12 @@ namespace Boxed.Win
                 App.RootFrame.Media.Stop();
             }
         }
+
+        public void ResetPages()
+        {
+            var content = RootFrame.Content as IResetPage;
+            if (content != null)
+                content.ResetPage();
+        }
     }
 }
