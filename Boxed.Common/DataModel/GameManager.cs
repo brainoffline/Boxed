@@ -148,9 +148,14 @@ namespace Boxed.DataModel
                             gamePack.GameSets.Add(gameSet);
                         }
 
-                        GamePacks.Add(gamePack);
+                        if (!GamePacks.Any(p => p.Name == gamePack.Name))
+                            GamePacks.Add(gamePack);
 
-                        AllGameSets.AddRange(gamePack.GameSets);
+                        foreach (var gameSet in gamePack.GameSets)
+                        {
+                            if (!AllGameSets.Any(s => s.Name == gameSet.Name))
+                                AllGameSets.Add(gameSet);
+                        }
                     }
 
                 }

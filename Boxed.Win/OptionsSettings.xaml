@@ -38,8 +38,9 @@
                        Text="Boxed can load additional games from the internet." />
             
             <ToggleSwitch x:Name="NetworkSwitch"
+                          HorizontalAlignment="Stretch"
                           OnContent="Load additional levels"
-                          OffContent="Restrict Data Consumption"
+                          OffContent="Restrict internet data"
                           IsOn="{Binding IsNetworkEnabled, Mode=TwoWay}" />
 
             <Button Content="Reset all scores"
