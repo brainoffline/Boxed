@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.UI;
 using Windows.UI.ApplicationSettings;
@@ -43,8 +45,30 @@ namespace Boxed.Win
         /// </summary>
         public App()
         {
-            this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            InitializeComponent();
+            Suspending += OnSuspending;
+
+            UnhandledException += OnUnhandledException;
+            TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;
+        }
+
+        private void OnUnhandledException(object sender, UnhandledExceptionEventArgs args)
+        {
+            Debug.WriteLine("UnhandledException");
+            Debug.WriteLine(args.Exception);
+
+            args.Handled = true;
+        }
+
+        private void OnUnobservedTaskException(object sender, UnobservedTaskExceptionEventArgs e)
+        {
+            Debug.WriteLine("UnobservedTaskException");
+            Debug.WriteLine(e);
+
+            foreach (var ex in e.Exception.Flatten().InnerExceptions)
+                Debug.WriteLine(ex);
+
+            e.SetObserved();
         }
 
         protected override void OnWindowCreated(WindowCreatedEventArgs args)
