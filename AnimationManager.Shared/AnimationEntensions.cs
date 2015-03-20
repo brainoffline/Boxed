@@ -298,9 +298,6 @@ namespace Brain.Animate
                 EasingFunction = easingFunction
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -317,9 +314,6 @@ namespace Brain.Animate
                 EasingFunction = easingFunction
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -336,9 +330,6 @@ namespace Brain.Animate
                 EasingFunction = easingFunction
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -353,9 +344,6 @@ namespace Brain.Animate
                 Value = value
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -370,9 +358,6 @@ namespace Brain.Animate
                 Value = value,
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -387,9 +372,6 @@ namespace Brain.Animate
                 Value = value,
             };
             animation.KeyFrames.Add(keyFrame);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 
@@ -404,9 +386,6 @@ namespace Brain.Animate
                 Value = value
             };
             animation.KeyFrames.Add(keyframe);
-#if NETFX_CORE || WINDOWS_81_PORTABLE
-            animation.EnableDependentAnimation = true;
-#endif
             return animation;
         }
 

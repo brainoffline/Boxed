@@ -42,6 +42,8 @@ namespace Boxed.ViewModels
         public string HighScore { get; set; }
         public bool IsHighScore { get; set; }
         public string PlayTime { get; set; }
+        public string PlayTimeMinutes { get; set; }
+        public string PlayTimeSeconds { get; set; }
         public Brush Color { get; set; }
 
         public GameRunner(IRunnerView view)
@@ -331,7 +333,10 @@ namespace Boxed.ViewModels
 
         public void Tick()
         {
-            PlayTime = (IsGameOver ? CompletedTime : (DateTime.Now - StartTime)).ToString(@"mm\:ss");
+            var playTime = (IsGameOver ? CompletedTime : (DateTime.Now - StartTime));
+            PlayTime = playTime.ToString(@"m\:ss");
+            PlayTimeMinutes = playTime.TotalMinutes.ToString("0");
+            PlayTimeSeconds = playTime.Seconds.ToString("00");
         }
 
         public void SaveState(Dictionary<string, object> state)

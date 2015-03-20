@@ -120,22 +120,40 @@
                     AutomationProperties.ItemType="Navigation Button"
                     Click="GoBack_OnClick" />
 
-            <TextBlock Text="{Binding GameDefinition.GameSet.Name, FallbackValue=Game Set}"
-                       Style="{StaticResource SubheaderTextBlockStyle}"
-                       Margin="0,59,0,0"
-                       Grid.Column="1" />
+            <StackPanel Orientation="Vertical"
+                        Grid.Column="1"
+                        Margin="0,45,0,0">
+                <TextBlock Text="{Binding GameDefinition.GameSet.Name, FallbackValue=Game Set}"
+                           Style="{StaticResource SubheaderTextBlockStyle}" />
 
-            <TextBlock Text="{Binding GameDefinition.DisplayLevel, FallbackValue=Level}"
-                       Style="{StaticResource SubheaderTextBlockStyle}"
-                       Margin="40,59,0,0"
-                       Grid.Column="2" />
+                <TextBlock Text="{Binding GameDefinition.DisplayLevel, FallbackValue=Level}"
+                           Style="{StaticResource SubheaderTextBlockStyle}" />
+            </StackPanel>
 
-            <TextBlock Text="{Binding Runner.PlayTime, FallbackValue=0:00}"
-                       Style="{StaticResource HeaderTextBlockStyle}"
-                       Margin="0,59,39,0"
-                       Grid.Column="3"
-                       HorizontalAlignment="Right" />
+            <Grid Margin="10,59,39,0"
+                  Grid.Column="3"
+                  HorizontalAlignment="Right">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="66" />
+                </Grid.ColumnDefinitions>
 
+                <TextBlock Text="{Binding Runner.PlayTimeMinutes, FallbackValue=0:0}"
+                           Grid.Column="0"
+                           Style="{StaticResource HeaderTextBlockStyle}"
+                           HorizontalAlignment="Right"
+                           Margin="0,0,10,0" />
+                <TextBlock Text=":"
+                           Grid.Column="1"
+                           Style="{StaticResource HeaderTextBlockStyle}" />
+                <TextBlock Text="{Binding Runner.PlayTimeSeconds, FallbackValue=44}"
+                           Grid.Column="2"
+                           Style="{StaticResource HeaderTextBlockStyle}"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,0,0"
+                           TextWrapping="NoWrap" />
+            </Grid>
         </Grid>
     </Grid>
 </Page>
