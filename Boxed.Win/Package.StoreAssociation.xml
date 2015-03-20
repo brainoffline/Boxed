@@ -356,6 +356,7 @@
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>23236DrDevelop.AnimalSplits</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.Binary</MainPackageIdentityName>
+    <MainPackageIdentityName>23236DrDevelop.BrainWinApp</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.followthesquare</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.Elroy</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.GoJump</MainPackageIdentityName>
@@ -367,6 +368,7 @@
     <MainPackageIdentityName>23236DrDevelop.MoronIQ</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.PasswordKiwi</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.ScaryEyes</MainPackageIdentityName>
+    <MainPackageIdentityName>23236DrDevelop.TempAutoTag</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.TicTacToeTwo</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.ToBeDone</MainPackageIdentityName>
     <MainPackageIdentityName>23236DrDevelop.TwoThree</MainPackageIdentityName>
@@ -383,17 +385,17 @@
       <PackageInfo>
         <OsMinVersion>6.3.0.0</OsMinVersion>
         <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>2.0.0.5</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.1.0.8</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>6.3.0.0</OsMinVersion>
         <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>2.0.0.5</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.1.0.8</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>6.3.0.0</OsMinVersion>
         <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>2.0.0.5</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>2.1.0.8</PackageMaxArchitectureVersion>
       </PackageInfo>
     </BundleInfo>
   </PackageInfoList>
