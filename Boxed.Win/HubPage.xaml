@@ -14,7 +14,7 @@
 
     <Page.Resources>
         <CollectionViewSource x:Name="groupedItemsViewSource"
-                              Source="{Binding AllPacks}"
+                              Source="{Binding FilteredPacks}"
                               IsSourceGrouped="true"
                               ItemsPath="Games" />
 

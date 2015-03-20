@@ -47,10 +47,12 @@ namespace Boxed.Win
             this.InitializeComponent();
 
             AllPacks = new ObservableCollection<GameSet>();
+            FilteredPacks = new ObservableCollection<GameSet>();
 
-            AllPacks.Clear();
             foreach (var gameSet in GameManager.Current.AllGameSets)
                 AllPacks.Add(gameSet);
+            foreach (var gameSet in GameManager.Current.AllGameSets)
+                FilteredPacks.Add(gameSet);
 
             Loaded += OnLoaded;
 
@@ -153,17 +155,22 @@ namespace Boxed.Win
         }
 
         public ObservableCollection<GameSet> AllPacks { get; set; }
+        public ObservableCollection<GameSet> FilteredPacks { get; set; }
 
         private void SearchQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
         {
             string queryText = args.QueryText;
             if (string.IsNullOrWhiteSpace(queryText)) return;
 
+            FilterPacks(queryText);
+
+            /*
             var gameSet = GameManager.Current.AllGameSets.FirstOrDefault(gs => gs.Name == queryText);
             if (gameSet == null) return;
 
             itemGridView.ScrollIntoView(gameSet);
             tallItemGridView.ScrollIntoView(gameSet);
+             */
         }
 
         private void SearchSuggestionsRequested(SearchBox sender, SearchBoxSuggestionsRequestedEventArgs args)
@@ -180,6 +187,25 @@ namespace Boxed.Win
                         suggestionCollection.AppendQuerySuggestion(gameSet.Name);
                 }
             }
+
+            FilterPacks(queryText);
+        }
+
+        private string _lastQuery = "";
+        private void FilterPacks(string queryText)
+        {
+            if (queryText == _lastQuery) return;
+            _lastQuery = queryText;
+
+            //var allCount = AllPacks.Count;
+            //var filteredCount = AllPacks.Count(s => s.Name.ToLower().Contains(queryText));
+
+            FilteredPacks.Clear();
+            foreach (var gameSet in AllPacks)
+            {
+                if (gameSet.Name.ToLower().Contains(queryText))
+                    FilteredPacks.Add(gameSet);
+            }
         }
 
         public void ResetPage()
@@ -187,6 +213,10 @@ namespace Boxed.Win
             AllPacks.Clear();
             foreach (var gameSet in GameManager.Current.AllGameSets)
                 AllPacks.Add(gameSet);
+
+            FilteredPacks.Clear();
+            foreach (var gameSet in AllPacks)
+                FilteredPacks.Add(gameSet);
         }
     }
 }
