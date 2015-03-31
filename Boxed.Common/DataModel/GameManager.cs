@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using Boxed.Common;
 using Boxed.ViewModels;
@@ -95,6 +96,9 @@ namespace Boxed.DataModel
         public async Task<bool> LoadInternetGamePacks()
         {
             if (!GameData.Current.IsNetworkEnabled)
+                return false;
+
+            if (!NetworkInterface.GetIsNetworkAvailable())
                 return false;
 
             if (_loadingInternetGamePack)
