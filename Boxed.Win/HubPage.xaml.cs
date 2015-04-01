@@ -133,7 +133,8 @@ namespace Boxed.Win
             var gameDefinition = frameworkElement.DataContext as GameDefinition;
             if (gameDefinition == null) return;
 
-            Search.QueryText = string.Empty;
+            HorizontalSearch.QueryText = string.Empty;
+            VerticalSearch.QueryText = string.Empty;
 
             brian.Do(BrianAction.ExitQuick);
 

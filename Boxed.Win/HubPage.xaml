@@ -195,102 +195,117 @@
             </ListView.GroupStyle>
         </ListView>
 
-        <SemanticZoom Grid.Row="2"
-                      Padding="0"
-                      Visibility="{Binding IsTall, Converter={StaticResource InverseVisibility}}">
+        <Grid Grid.Row="2"
+              Visibility="{Binding IsTall, Converter={StaticResource InverseVisibility}}">
+            <SemanticZoom Padding="0">
 
-            <SemanticZoom.ZoomedInView>
+                <SemanticZoom.ZoomedInView>
 
-                <GridView x:Name="itemGridView"
-                          AutomationProperties.AutomationId="ItemGridView"
-                          AutomationProperties.Name="Grouped Items"
-                          ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
-                          ItemTemplate="{StaticResource GameItemTemplate}"
-                          ItemsPanel="{StaticResource HorizontalPanel}"
-                          SelectionMode="None"
-                          IsSwipeEnabled="false"
-                          IsItemClickEnabled="False"
-                          Padding="120,0,40,0"
-                          VerticalAlignment="Center">
+                    <GridView x:Name="itemGridView"
+                              AutomationProperties.AutomationId="ItemGridView"
+                              AutomationProperties.Name="Grouped Items"
+                              ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
+                              ItemTemplate="{StaticResource GameItemTemplate}"
+                              ItemsPanel="{StaticResource HorizontalPanel}"
+                              SelectionMode="None"
+                              IsSwipeEnabled="false"
+                              IsItemClickEnabled="False"
+                              Padding="120,0,40,0"
+                              VerticalAlignment="Center">
 
-                    <GridView.GroupStyle>
-                        <GroupStyle HeaderTemplate="{StaticResource GameSetHeaderTemplate}" Panel="{StaticResource HorizontalWrapGrid}"/>
-                    </GridView.GroupStyle>
-                </GridView>
+                        <GridView.GroupStyle>
+                            <GroupStyle HeaderTemplate="{StaticResource GameSetHeaderTemplate}" Panel="{StaticResource HorizontalWrapGrid}"/>
+                        </GridView.GroupStyle>
+                    </GridView>
 
-            </SemanticZoom.ZoomedInView>
+                </SemanticZoom.ZoomedInView>
 
-            <SemanticZoom.ZoomedOutView>
-                <GridView x:Name="packGridView"
-                          SelectionMode="None"
-                          IsSwipeEnabled="false"
-                          VerticalAlignment="Center"
-                          Padding="120,0,0,0">
-                    <GridView.ItemTemplate>
-                        <DataTemplate>
-                            <Border BorderThickness="1"
-                                    BorderBrush="{Binding Group.Color}"
-                                    Margin="4"
-                                    Padding="10"
-                                    Background="{Binding Group.Color}"
-                                    HorizontalAlignment="Stretch"
-                                    VerticalAlignment="Stretch">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="30" />
-                                    </Grid.RowDefinitions>
-                                    <TextBlock Text="{Binding Group.Name}"
-                                               FontFamily="Segoe UI Light"
-                                               FontSize="24" />
-                                    <ProgressBar VerticalAlignment="Stretch"
-                                                 Maximum="{Binding Group.GameCount}"
-                                                 Value="{Binding Group.GamesPlayed}"
-                                                 Foreground="Black"
-                                                 Grid.Row="1" />
-                                    <TextBlock Grid.Row="1"
-                                               Text="{Binding Group.DisplayGamesPlayed}"
-                                               FontFamily="Segoe UI Light"
-                                               FontSize="20"
-                                               Foreground="{StaticResource ApplicationForegroundThemeBrush}"
-                                               HorizontalAlignment="Center"
-                                               VerticalAlignment="Center" />
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </GridView.ItemTemplate>
-                    <GridView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapGrid ItemWidth="300"
-                                      ItemHeight="150"
-                                      MaximumRowsOrColumns="5"
-                                      VerticalChildrenAlignment="Stretch" />
-                        </ItemsPanelTemplate>
-                    </GridView.ItemsPanel>
-                    <GridView.ItemContainerStyle>
-                        <Style TargetType="GridViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                            <Setter Property="VerticalContentAlignment" Value="Stretch" />
-                        </Style>
-                    </GridView.ItemContainerStyle>
-                </GridView>
+                <SemanticZoom.ZoomedOutView>
+                    <GridView x:Name="packGridView"
+                              SelectionMode="None"
+                              IsSwipeEnabled="false"
+                              VerticalAlignment="Center"
+                              Padding="120,0,0,0">
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1"
+                                        BorderBrush="{Binding Group.Color}"
+                                        Margin="4"
+                                        Padding="10"
+                                        Background="{Binding Group.Color}"
+                                        HorizontalAlignment="Stretch"
+                                        VerticalAlignment="Stretch">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="30" />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Text="{Binding Group.Name}"
+                                                   FontFamily="Segoe UI Light"
+                                                   FontSize="24" />
+                                        <ProgressBar VerticalAlignment="Stretch"
+                                                     Maximum="{Binding Group.GameCount}"
+                                                     Value="{Binding Group.GamesPlayed}"
+                                                     Foreground="Black"
+                                                     Grid.Row="1" />
+                                        <TextBlock Grid.Row="1"
+                                                   Text="{Binding Group.DisplayGamesPlayed}"
+                                                   FontFamily="Segoe UI Light"
+                                                   FontSize="20"
+                                                   Foreground="{StaticResource ApplicationForegroundThemeBrush}"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid ItemWidth="300"
+                                          ItemHeight="150"
+                                          MaximumRowsOrColumns="5"
+                                          VerticalChildrenAlignment="Stretch" />
+                            </ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                        <GridView.ItemContainerStyle>
+                            <Style TargetType="GridViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </GridView.ItemContainerStyle>
+                    </GridView>
 
-            </SemanticZoom.ZoomedOutView>
+                </SemanticZoom.ZoomedOutView>
 
-        </SemanticZoom>
+            </SemanticZoom>
+        </Grid>
 
-        <SearchBox x:Name="Search"
-                   Grid.Row="0"
-                   HorizontalAlignment="Right"
-                   Margin="0,0,40,0"
-                   VerticalAlignment="Bottom"
-                   Width="200"
-                   QuerySubmitted="SearchQuerySubmitted"
-                   SuggestionsRequested="SearchSuggestionsRequested"
-                   FocusOnKeyboardInput="True"
-                   PlaceholderText="game set search" 
-                   />
-
+        <Grid Grid.Row="0" Visibility="{Binding IsTall, Converter={StaticResource InverseVisibility}}">
+            <SearchBox x:Name="HorizontalSearch"
+                       Grid.Row="0"
+                       HorizontalAlignment="Right"
+                       Margin="0,0,40,40"
+                       VerticalAlignment="Bottom"
+                       Width="200"
+                       QuerySubmitted="SearchQuerySubmitted"
+                       SuggestionsRequested="SearchSuggestionsRequested"
+                       FocusOnKeyboardInput="True"
+                       PlaceholderText="game set search" 
+                       />
+        </Grid>
+        <Grid Grid.Row="0"
+              Visibility="{Binding IsTall, Converter={StaticResource Visibility}}">
+            <SearchBox x:Name="VerticalSearch"
+                       Grid.Row="0"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,40,0"
+                       VerticalAlignment="Bottom"
+                       Width="200"
+                       QuerySubmitted="SearchQuerySubmitted"
+                       SuggestionsRequested="SearchSuggestionsRequested"
+                       FocusOnKeyboardInput="True"
+                       PlaceholderText="game set search" />
+        </Grid>
 
     </Grid>
 </Page>
