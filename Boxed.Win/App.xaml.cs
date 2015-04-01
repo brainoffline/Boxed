@@ -152,6 +152,8 @@ namespace Boxed.Win
 
         private void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
+            var deferal = args.Request.GetDeferral();
+
             var data = args.Request.Data;
 
             StringBuilder sb = new StringBuilder();
@@ -165,6 +167,8 @@ namespace Boxed.Win
             data.SetHtmlFormat(html);
 
             data.Properties.Title = "Boxed is Awesome";
+
+            deferal.Complete();
         }
 
         /// <summary>

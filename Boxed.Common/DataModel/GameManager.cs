@@ -108,65 +108,67 @@ namespace Boxed.DataModel
             {
                 _loadingInternetGamePack = true;
 
-                var client = new HttpClient();
-                var packNames = new List<string> {"PackC.json"};
-
-                try
+                using (var client = new HttpClient())
                 {
-                    foreach (var packName in packNames)
+                    var packNames = new List<string> {"PackC.json"};
+
+                    try
                     {
-                        // if previously loaded, don't try again
-                        if (AllGameSets.Count(gs => gs.Name == packName) > 0)
-                            continue;
-
-                        var json = await client.GetStringAsync("http://0brain.com/" + packName);
-
-                        var gamePack = JsonConvert.DeserializeObject<GamePack>(json);
-
-                        foreach (var gameSetName in gamePack.GameSetFilenames)
+                        foreach (var packName in packNames)
                         {
+                            // if previously loaded, don't try again
+                            if (AllGameSets.Count(gs => gs.Name == packName) > 0)
+                                continue;
 
-                            // If locally cached, then use that one.
-                            var gameSet = await FileUtil.Read<GameSet>("Cache", gameSetName);
+                            var json = await client.GetStringAsync("http://0brain.com/" + packName);
 
-                            if (gameSet == null)
+                            var gamePack = JsonConvert.DeserializeObject<GamePack>(json);
+
+                            foreach (var gameSetName in gamePack.GameSetFilenames)
                             {
-                                json = await client.GetStringAsync("http://0brain.com/" + gameSetName);
 
-                                gameSet = JsonConvert.DeserializeObject<GameSet>(json);
+                                // If locally cached, then use that one.
+                                var gameSet = await FileUtil.Read<GameSet>("Cache", gameSetName);
 
-                                // Cache locally so don't have to reload
-                                await FileUtil.Write("Cache", gameSetName, gameSet);
+                                if (gameSet == null)
+                                {
+                                    json = await client.GetStringAsync("http://0brain.com/" + gameSetName);
+
+                                    gameSet = JsonConvert.DeserializeObject<GameSet>(json);
+
+                                    // Cache locally so don't have to reload
+                                    await FileUtil.Write("Cache", gameSetName, gameSet);
+                                }
+
+                                gameSet.GamePack = gamePack;
+
+                                for (int i = 0; i < gameSet.Games.Count; i++)
+                                {
+                                    var definition = gameSet.Games[i];
+                                    definition.GameSet = gameSet;
+                                    definition.GamePack = gamePack;
+                                    definition.Index = i;
+                                }
+
+                                gamePack.GameSets.Add(gameSet);
                             }
 
-                            gameSet.GamePack = gamePack;
+                            if (!GamePacks.Any(p => p.Name == gamePack.Name))
+                                GamePacks.Add(gamePack);
 
-                            for (int i = 0; i < gameSet.Games.Count; i++)
+                            foreach (var gameSet in gamePack.GameSets)
                             {
-                                var definition = gameSet.Games[i];
-                                definition.GameSet = gameSet;
-                                definition.GamePack = gamePack;
-                                definition.Index = i;
+                                if (!AllGameSets.Any(s => s.Name == gameSet.Name))
+                                    AllGameSets.Add(gameSet);
                             }
-
-                            gamePack.GameSets.Add(gameSet);
                         }
 
-                        if (!GamePacks.Any(p => p.Name == gamePack.Name))
-                            GamePacks.Add(gamePack);
-
-                        foreach (var gameSet in gamePack.GameSets)
-                        {
-                            if (!AllGameSets.Any(s => s.Name == gameSet.Name))
-                                AllGameSets.Add(gameSet);
-                        }
                     }
-
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Error loading internet pack: " + ex);
-                    return false;
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine("Error loading internet pack: " + ex);
+                        return false;
+                    }
                 }
 
                 return true;
